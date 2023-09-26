@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.DetailFragment">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        tools:ignore="MissingConstraints">
+
+
+        <Button
+            android:id="@+id/back_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/white"
+            android:drawableLeft="@drawable/back"
+            tools:ignore="RtlHardcoded,SpeakableTextPresentCheck" />
+
+        <TextView
+            android:id="@+id/detail_title_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:fontFamily="@font/avenirregular"
+            android:gravity="center"
+            android:text="Rick Sanchez"
+            android:textSize="30sp"
+            tools:ignore="HardcodedText" />
+
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/detail_image_view"
+                android:layout_width="275dp"
+                android:layout_height="275dp"
+                android:layout_marginHorizontal="50dp"
+                android:layout_marginVertical="20dp"
+                android:src="@drawable/ramwallpaper"
+                tools:ignore="ContentDescription,ImageContrastCheck" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:orientation="horizontal">
+                
+                
+                <TextView
+                    android:layout_width="125dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/avenirbold"
+                    android:textColor="@color/black"
+                    android:textSize="22sp"
+                    android:text="Status : "
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+                    android:id="@+id/detail_status_text_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/avenirregular"
+                    android:textColor="@color/black"
+                    android:text="Alive"
+                    android:textSize="22sp"
+                    tools:ignore="HardcodedText" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:layout_width="125dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/avenirbold"
+                    android:textColor="@color/black"
+                    android:textSize="22sp"
+                    android:text="Specy : "
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+                    android:id="@+id/detail_specy_text_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/avenirregular"
+                    android:textColor="@color/black"
+                    android:textSize="22sp"
+                    android:text="Human"
+                    tools:ignore="HardcodedText" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:layout_width="125dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/avenirbold"
+                    android:text="Gender : "
+                    android:textColor="@color/black"
+                    android:textSize="22sp"
+                    tools:ignore="HardcodedText,TextSizeCheck" />
+
+                <TextView
+                    android:id="@+id/detail_gender_text_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/avenirregular"
+                    android:textSize="22sp"
+                    android:textColor="@color/black"
+                    android:text="Female"
+                    tools:ignore="HardcodedText" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:layout_width="125dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/avenirbold"
+                    android:textSize="22sp"
+                    android:textColor="@color/black"
+                    android:text="Origin : "
+                    tools:ignore="HardcodedText" />
+
+                    <TextView
+                        android:id="@+id/detail_orign_text_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/avenirregular"
+                        android:textSize="22sp"
+                        android:textColor="@color/black"
+                        android:text="Earth"
+                        tools:ignore="HardcodedText" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:layout_width="125dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/avenirbold"
+                    android:text="Location : "
+                    android:textColor="@color/black"
+                    android:textSize="22sp"
+                    tools:ignore="HardcodedText,TextSizeCheck" />
+
+                <TextView
+                    android:id="@+id/detail_location_text_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/avenirregular"
+                    android:textSize="22sp"
+                    android:textColor="@color/black"
+                    android:text="Earth"
+                    tools:ignore="HardcodedText" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp">
+
+
+                <TextView
+                    android:layout_width="125dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/avenirbold"
+                    android:text="Episodes : "
+                    android:textColor="@color/black"
+                    android:textSize="22sp"
+                    tools:ignore="HardcodedText,TextSizeCheck" />
+
+                <TextView
+                    android:id="@+id/detail_episode_text_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/avenirregular"
+                    android:textSize="22sp"
+                    android:textColor="@color/black"
+                    android:text="1,2,3,4"
+                    tools:ignore="HardcodedText" />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:layout_width="125dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/avenirbold"
+                    android:text="Created at (in API)"
+                    android:textColor="@color/black"
+                    android:textSize="22sp"
+                    tools:ignore="HardcodedText,TextSizeCheck" />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/avenirregular"
+                    android:textSize="22sp"
+                    android:textColor="@color/black"
+                    android:text="5 May 2019"
+                    tools:ignore="HardcodedText" />
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
