@@ -1,5 +1,5 @@
 # Rick_And_Morty_MVVM
-It is an application where the user can list Rick and Morty locations, characters in the location and view the details of the characters.
+A screen that welcomes the user was created using the Animation class in Android. Hilt, a dependency injection library for Android, was used. MVVM ( Model - View - ViewMode ) was used in the design patterns in the project. It is aimed that the user can list the Rick and Morty locations, the characters in the location and view the details of the characters. Rick and Morty location and character information was accessed with RESTful API. Rick and Morty locations were transferred to the user as a horizontal list with RecyclerView.Characters were listed vertically with RecyclerView according to the user's location selection. The detail page for the character selected from the vertical list was designed. Improvements have been made so that the application can be used in landscape mode and on different screen sizes.
 
 Link to the api : https://rickandmortyapi.com
 
